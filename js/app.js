@@ -1,7 +1,10 @@
 
-const btn = document.querySelector("button")
+async function foo(){
+    return "Hello world"
+}
 
-btn.a
+let result =  foo()
+console.log(result);
 
 
 
