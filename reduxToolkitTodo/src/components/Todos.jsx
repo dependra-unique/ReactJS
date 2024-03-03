@@ -14,7 +14,7 @@ function Todos() {
     const dispatch = useDispatch()
     return (
         <>
-            <div>
+            <div className='text-orange-700 text-3xl'>
                 Todo
             </div>
 
