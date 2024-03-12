@@ -3,6 +3,8 @@ import { Editor } from '@tinymce/tinymce-react'
 import { Controller, controller } from 'react-hook-form'
 import { renderMatches } from 'react-router-dom'
 
+
+//this is a real time editor(RTE)
 export default function RTE({name, control, label, defaultValue = ""}) {
     return (
 
