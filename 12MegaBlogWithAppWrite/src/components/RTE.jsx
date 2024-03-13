@@ -1,7 +1,7 @@
 import React from 'react'
 import { Editor } from '@tinymce/tinymce-react'
-import { Controller, controller } from 'react-hook-form'
-import { renderMatches } from 'react-router-dom'
+import { Controller} from 'react-hook-form'
+
 
 
 //this is a real time editor(RTE)
