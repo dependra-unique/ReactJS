@@ -92,6 +92,7 @@ function Signup() {
                         <Button 
                         type="submit"
                         className="w-full"
+                        onClick={signup}
                         >
                         Create Account
                         </Button>
