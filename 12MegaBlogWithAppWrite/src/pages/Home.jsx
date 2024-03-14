@@ -30,7 +30,7 @@ function Home() {
         )
     }
     return (
-        <div w-full py-8v>
+        <div w-full py-8>
             <Container>
                 <div flex flex-wrap>
                     {posts.map((post) => (

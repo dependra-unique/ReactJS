@@ -19,7 +19,7 @@ export default function RTE({name, control, label, defaultValue = ""}) {
                 initialValue={defaultValue}
                 init={
                     {
-                        initialValue: defaultValue,
+                        initialValue:defaultValue,
                         height: 500,
                         menubar: true,
                         plugins: [
@@ -27,6 +27,7 @@ export default function RTE({name, control, label, defaultValue = ""}) {
                             "advlist",
                             "autolink",
                             "lists",
+                            "link",
                             "image",
                             "charmap",
                             "preview",

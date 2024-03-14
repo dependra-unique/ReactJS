@@ -1,5 +1,5 @@
-import conf from '../conf/conf'
-import { Client, ID, Databases, Storage, Query, Account } from 'appwrite'
+import conf from '../conf/conf.js'
+import { Client, ID, Databases, Storage, Query } from 'appwrite'
 
 export class Service {
     client = new Client();
@@ -60,7 +60,7 @@ export class Service {
             await this.databases.deleteDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
-                slug,
+                slug
             )
             return true;
         } catch (error) {
@@ -119,7 +119,7 @@ export class Service {
         try {
             await this.bucket.deleteFile(
                 conf.appwriteBucketId,
-                fileId,
+                fileId
             )
             return true;            
         } catch (error) {
@@ -132,7 +132,7 @@ export class Service {
     getFilePreview(fileId){
         return this.bucket.getFilePreview(
             conf.appwriteBucketId,
-            fileId,
+            fileId
         )
     }
 }

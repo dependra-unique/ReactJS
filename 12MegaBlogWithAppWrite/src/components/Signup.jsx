@@ -19,10 +19,9 @@ function Signup() {
             const userData = await authService.createAccount(data)
             if(userData) {
                 const userData = await authService.getCurrentUser()
-                if(userData){
-                    dispatch(login(userData))
-                    navigate("/")
-                }
+                if(userData) dispatch(login(userData));
+                navigate("/")
+                
             }
             
         } catch (error) {
@@ -92,7 +91,7 @@ function Signup() {
                         <Button 
                         type="submit"
                         className="w-full"
-                        onClick={signup}
+                      
                         >
                         Create Account
                         </Button>
