@@ -1,4 +1,4 @@
-import React, {useEffect, useStaet} from 'react'
+import React, {useEffect, useState} from 'react'
 import appwriteService from '../appwrite/config'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import {Button, Container} from '../components'
@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux'
 
 export default function Post() {
 
-    const [post, setPost] = useStaet(null)
+    const [post, setPost] = useState(null)
     const {slug} = useParams()
     const navigate = useNavigate()
 

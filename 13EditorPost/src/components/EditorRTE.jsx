@@ -11,7 +11,7 @@ export default function EditorRTE() {
   return (
     <>
       <Editor
-        // onInit={(evt, editor) => editorRef.current = editor}
+        apiKey='6saqufkejg482igum458tafs5pksflsi36oau6m2s5vhzb6o'
         initialValue="<p>This is the initial content of the editor.</p>"
         init={{
           height: 500,

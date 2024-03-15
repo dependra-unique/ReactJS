@@ -17,6 +17,8 @@ export class Service {
     //post Create
     async createPost({title, slug, content, featuredImage, status, userId}){
         try {   
+            console.log("create post");
+
             // slug ko as a ID.unique() ki tarah hi use kar rhe hai
             return await this.databases.createDocument( 
                 conf.appwriteDatabaseId,
@@ -102,6 +104,7 @@ export class Service {
     //Upload file
     async uploadFile(file){
         try {
+            console.log("upload file");
             return await this.bucket.createFile(
                 conf.appwriteBucketId,
                 ID.unique(),
