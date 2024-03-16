@@ -85,3 +85,35 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+
+
+// //practice
+// import React, { useState } from 'react'
+
+// function App() {
+
+//   const [value, setValue] = useState(0)
+
+//   const addValue = () => {
+//     setValue(value+1)
+//   }
+//   const removeValue = () => {
+//     setValue(value-1)
+//   }
+
+//   return (
+//     <>
+//     <h1>Value is : {value}</h1>
+//     <button onClick={addValue}>Add value {value}</button>
+//     <button onClick={removeValue}>Remove value {value}</button>
+//     </>
+//   )
+// }
+
+// export default App
+
