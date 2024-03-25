@@ -5,7 +5,7 @@ function Contact() {
     return (
 
        <>
-        <Header />
+        {/* <Header /> */}
         <h1>Contact page</h1>
        </>
     )

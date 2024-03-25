@@ -1,12 +1,21 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {BrowserRouter, Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 import Home from './components/Home'
 import Contact from './components/Contact'
 import About from './components/About'
 import Layout from './Layout'
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+   <Route path='/' element={<Layout />}>
+      <Route path='' element={<Home />}/>
+      <Route path='/about' element={<About />}/>
+      <Route path='/contact' element={<Contact />}/>
+   </Route>
+  )
+)
 
 
 function App() {
@@ -14,14 +23,17 @@ function App() {
 
   return (
     <>
-     <BrowserRouter >
+     {/* <BrowserRouter >
       <Routes >
           
           <Route path="/" element={<Home />}/>
           <Route path="/contact" element={<Contact />}/>
           <Route path="/about" element={<About />}/>
       </Routes>
-     </BrowserRouter>
+     </BrowserRouter> */}
+
+
+     <RouterProvider router={router}/>
     </>
   )
 }

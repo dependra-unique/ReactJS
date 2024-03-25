@@ -4,7 +4,7 @@ import Header from './Header'
 function Home() {
     return (
        <>
-        <Header />
+        {/* <Header /> */}
         <h1>Home page</h1>
        </>
     )

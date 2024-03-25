@@ -6,7 +6,7 @@ function Header() {
         <div className='flex gap-8 bg-slate-600'>
             <div>
                 <NavLink 
-                to='/'
+                to=''
                 className={({isActive}) => `${isActive ? "bg-red-500" : ""}`}>
                     Home
                 </NavLink>
